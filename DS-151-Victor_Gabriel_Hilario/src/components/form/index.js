@@ -25,7 +25,7 @@ export default function Form(){
         );
 
         function CalculadoraMedia(){
-            return setMedia(nota1 - nota2 /2 )
+            setMedia(((parseFloat(nota1)+parseFloat(nota2))/2).toFixed(2))
             }
             function validacaoMedia(){
             if(nota2 != null && nota1 != null){
